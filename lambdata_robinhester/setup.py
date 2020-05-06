@@ -14,7 +14,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown", # required if using a md file for long desc
     #license="MIT",
-    url="https://github.com/robinhester/DS-Unit-3-Sprint-1-Software-Engineering/tree/master/module1-python-modules-packages-and-environments",
+    url="https://github.com/robinhester/lambdata_package",
     #keywords="",
     packages=find_packages() # ["lambdata_robinhester"]
 )
