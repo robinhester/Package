@@ -14,6 +14,7 @@ from lambdata_robinhester.accuracy import accuracy_score
 
 print(accuracy_score(alist,blist))
 ```
+
 ```py
 from sklearn.model_selection import train_test_split
 from lambdata_robinhester.train import train_val_test_split
@@ -21,34 +22,35 @@ train,test,val = train_val_test_split(database)
 ```
 
 ## Accuracy Score Function
- ```
-    Returns accuracy of a predicted value vs an
-    actual value
 
-    Params: x must equal an actual value, y must
-    equal a predicted value, values can be in either panda
-    series or dataframe form
+```
+Returns accuracy of a predicted value vs an
+actual value
 
-    Example: a_list=pd.Series([2039, 4992, 8906, 12094])
-             b_list=pd.Series([2039,4000,8000,12098])
+Params: x must equal an actual value, y must
+equal a predicted value, values can be in either panda
+series or dataframe form
 
-    Returns: percent of correct values vs incorrect values
-    for comparison
- ```
+Example: a_list=pd.Series([2039, 4992, 8906, 12094])
+b_list=pd.Series([2039,4000,8000,12098])
+
+Returns: percent of correct values vs incorrect values
+for comparison
+```
 
 ## Train Test Val Split Function
- ```
-    Does a train, test, validation three way
-    split for predictive modeling
 
-    Params: a database for predictive models.
+```
+Does a train, test, validation three way
+split for predictive modeling
 
-    Example: csv file loaded in from pandas.
-    Must be inputed as:
-    train, test, val = train_val_test_split(database)
+Params: a database for predictive models.
 
-    Returns: three seperate databases ready for
-    predictive models and to be split into target and features
+Example: csv file loaded in from pandas.
+Must be inputed as: train, test, val = train_val_test_split(database)
+
+Returns: three seperate databases ready for
+predictive models and to be split into target and features
 ```
 
 ## Required Packages

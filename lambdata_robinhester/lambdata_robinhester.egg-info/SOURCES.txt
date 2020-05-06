@@ -1,6 +1,0 @@
-README.md
-setup.py
-lambdata_robinhester.egg-info/PKG-INFO
-lambdata_robinhester.egg-info/SOURCES.txt
-lambdata_robinhester.egg-info/dependency_links.txt
-lambdata_robinhester.egg-info/top_level.txt
