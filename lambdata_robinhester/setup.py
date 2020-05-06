@@ -7,7 +7,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="lambdata_robinhester", # the name that you will install via pip
-    version="1.0",
+    version="1.1",
     author="Robin Hester",
     author_email="robin.hester@yahoo.com",
     description="Functions that can used with predictive modeling",
