@@ -21,7 +21,7 @@ train,test,val = train_val_test_split(database)
 ```
 
 ## Accuracy Score Function
- """
+ ```
     Returns accuracy of a predicted value vs an
     actual value
 
@@ -34,10 +34,10 @@ train,test,val = train_val_test_split(database)
 
     Returns: percent of correct values vs incorrect values
     for comparison
-    """
+ ```
 
 ## Train Test Val Split Function
- """
+ ```
     Does a train, test, validation three way
     split for predictive modeling
 
@@ -49,13 +49,13 @@ train,test,val = train_val_test_split(database)
 
     Returns: three seperate databases ready for
     predictive models and to be split into target and features
-    """
+```
 
 ## Required Packages
 
-"""
+```sh
 Pandas
 Numpy
 Sklearn
 Sklearn.model_selction(train_test_split)
-"""
+```

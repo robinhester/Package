@@ -10,11 +10,11 @@ setup(
     version="1.0",
     author="Robin Hester",
     author_email="robin.hester@yahoo.com",
-    description="Two functions for predictive modeling",
+    description="Two functions used with predictive modeling",
     long_description=long_description,
     long_description_content_type="text/markdown", # required if using a md file for long desc
     #license="MIT",
     url="https://github.com/robinhester/lambdata_package",
     #keywords="",
-    packages=find_packages() # ["lambdata_robinhester"]
+    packages=find_packages() # ["my_lambdata"]
 )
