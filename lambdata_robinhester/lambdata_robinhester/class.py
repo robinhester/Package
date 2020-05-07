@@ -1,17 +1,18 @@
 import pandas
 from pandas import DataFrame
 
-class YouTube(object):
+class YouTube():
     '''
     Creating a new class based off of the Youtube Dataframe
     used for predictive modeling
     '''
-    def __init__(self, name, videoviews, channeltype, country, usercreated):
-        self.name = Name
+    def __init__(self, name, videoviews, channeltype, country, usercreated, dicto):
+        self.name = name
         self.videoviews = videoviews
         self.channeltype = channeltype
         self.country = country
         self.usercreated = usercreated
+        self.dicto = dicto
 
     def name(self):
         print(self.name)
@@ -28,16 +29,16 @@ class YouTube(object):
     def usercreated(self):
         print(self.usercreated)
 
-    def create_my_df():
-        my_df = pandas.Dataframe({'name' : [self.name]},
+    def create_my_df(self):
+        my_df = pandas.DataFrame({'name' : [self.name]},
                                 {'videoviews' : [self.videoviews]},
                                 {'channeltype' : [self.channeltype]},
                                 {'country' : [self.country]},
                                 {'usercreated' : [self.usercreated]}
                                 )
 
-    def create_my_dict():
-        my_dict = {self.country : input('Please enter country full name')}
+    def create_my_dict(self):
+        my_dict = {self.country : self.dicto}
 
 
     def dictionary_feature(my_df, my_dict):
@@ -115,3 +116,20 @@ class Youtube_Wrangling(pandas.DataFrame):
     def inspect_columns(self):
         print(self.df.columns)
 
+if __name__ == "__main__":
+
+    youtuber = YouTube('Pewdiepie','20,000','Entertainment','US','10/10/2003','United States')
+
+    youtuber.name
+    youtuber.videoviews
+    youtuber.channeltype
+    youtuber.country
+    youtuber.usercreated
+    df=youtuber.create_my_df()
+    print(df)
+    dictionary=youtuber.create_my_dict()
+    print(dictionary)
+    df=df.dictionary_feature()
+    print(df)
+
+    pass
