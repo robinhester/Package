@@ -3,25 +3,38 @@ class YouTube(object):
     Creating a new class based off of the Youtube Dataframe
     used for predictive modeling
     '''
-    def__init__(self, my_df)
-        self.my_df = my_df
+    def__init__(self, name, videoviews, channeltype, country, usercreated)
+        self.name = Name
+        self.videoviews = videoviews
+        self.channeltype = channeltype
+        self.country = country
+        self.usercreated = usercreated
 
     def name(self):
-        print(self.my_df.name)
+        print(self.name)
 
     def videoviews(self):
-        print(self.my_df.videoviews)
+        print(self.videoviews)
 
     def channeltype(self):
-        print(self.my_df.channeltype)
+        print(self.channeltype)
 
     def country(self):
-        print(self.my_df.country)
+        print(self.country)
 
     def usercreated(self):
-        print(self.my_df.usercreated)
+        print(self.usercreated)
 
-    def dictionary_feature(self, my_dict):
+    def create_my_df():
+        my_df = pandas.Dataframe({'name' : [self.name]},
+                                {'videoviews' : [self.videoviews]},
+                                {'channeltype' : [self.channeltype]},
+                                {'country' : [self.country]},
+                                {'usercreated' : [self.usercreated]}
+                                )
+
+
+    def dictionary_feature(my_df, my_dict):
           """
         Adds new column for country name abbreviations
         with full name of country using the map function
@@ -95,3 +108,4 @@ class Youtube_Wrangling(pandas.DataFrame):
 
     def inspect_columns(self):
         print(self.df.columns)
+
