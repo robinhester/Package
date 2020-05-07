@@ -1,4 +1,5 @@
 import pandas as pd 
+from pandas import DataFrame
 from lambdata_robinhester.accuracy import accuracy_score
 from lambdata_robinhester.train import train_val_test_split
 from lambdata_robinhester.replace import dictionary_feature

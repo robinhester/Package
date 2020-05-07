@@ -4,7 +4,9 @@ unit-3-Lambda
 ## Installation
 
 ```sh
-pip install _____
+
+pip install -i https://test.pypi.org/simple/ lambdata-arobinhesterCopy PIP instructions
+
 ```
 
 ## Usage
