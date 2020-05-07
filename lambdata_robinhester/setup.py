@@ -6,8 +6,8 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name="lambdata_robinhester", # the name that you will install via pip
-    version="1.1",
+    name="lambdata_arobinhester", # the name that you will install via pip
+    version="1.0",
     author="Robin Hester",
     author_email="robin.hester@yahoo.com",
     description="Functions that can used with predictive modeling",

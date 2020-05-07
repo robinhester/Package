@@ -5,8 +5,12 @@ verify_ssl = true
 
 [dev-packages]
 twine = "*"
+pytest = "*"
 
 [packages]
+pandas = "*"
+scikit-learn = "*"
+numpy = "*"
 
 [requires]
 python_version = "3.8"

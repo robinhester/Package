@@ -2,7 +2,7 @@ import sklearn
 from sklearn.model_selection import train_test_split
 
 
-def train_val_test_split(X):
+def train_val_test_split(my_df):
     """
     Does a train, test, validation three way
     split for predictive modeling
@@ -16,7 +16,7 @@ def train_val_test_split(X):
     Returns: three seperate databases ready for
     predictive models and to be split into target and features
     """
-    train = X.copy()
+    train = my_df.copy()
     train, test = train_test_split(train, train_size=.80, test_size=.20,
                                    random_state=42)
 
